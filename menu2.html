@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Josefin+Sans&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Dosis', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+			padding: 1px;
+			text-align: center;
+			margin: 3px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 5px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.navMenu a:hover {
+
+			color: #590080;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="HOME" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> </a>
+		<a id="APPOINTMENTS" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-check"></i> APPOINTMENTS</a>
+		<a id="INBOX" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> INBOX</a>
+		<a id="HABITS" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-person-running"></i> HABITS</a>
+		<a id="FINANCES" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-credit-card"></i> FINANCES</a>
+		<a id="BOOKS" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-open"></i> BOOKS</a>
+		<a id="SIMPLE" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> SIMPLE</a>
+		<a id="VISION" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-eye"></i> VISION</a>
+		<a id="INTENTION" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart-pulse"></i> INTENTION</a>
+		<a id="GAME-CHANGER" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-seedling"></i> GAME-CHANGER</a>
+		<a id="JOURNAL" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-pen-clip"></i> JOURNAL</a>
+		<a id="MINDSCAPE" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-brain"></i> MINDSCAPE</a>
+
+
+
+
+
+
+
+		
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "VERTICAL";
+		if (direction === "horizontal") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:2px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'HOME')
+				window.open("https://www.notion.so/iagomonteiro/homepage-2f3c32be3a9d4381bd927fb6f3232d38?pvs=4", '_parent').focus();
+			else if (id == "APPOINTMENTS")
+				window.open("https://www.notion.so/iagomonteiro/APPOINTMENTS-4a5bc2113ce343c1abad7c1f5922291f?pvs=4", '_parent').focus();
+			else if (id == "INBOX")
+				window.open("https://www.notion.so/iagomonteiro/INBOX-6db14ae1d28f4d6a83d9926846b59332?pvs=4", '_parent').focus();
+			else if (id == "HABITS")
+				window.open("https://www.notion.so/iagomonteiro/HABIT-TRACKER-3ef8046c7fbf4649b4fca22e0b14c4dc?pvs=4", '_parent').focus();
+			else if (id == "FINANCES")
+				window.open("https://www.notion.so/iagomonteiro/FINANCE-TRACKER-3dc8fc57f85b44c9b17d399f5f91bfdf?pvs=4", '_parent').focus();
+			else if (id == "BOOKS")
+				window.open("https://www.notion.so/iagomonteiro/BOOK-TRACKER-ef30f7a62a31489cbff8e19afbc789b6?pvs=4", '_parent').focus();
+			else if (id == "SIMPLE")
+				window.open("https://www.notion.so/iagomonteiro/SIMPLE-EDUCATION-78120f8325d04236941fa9b5745d34e2?pvs=4", '_parent').focus();
+			else if (id == "VISION")
+				window.open("https://www.notion.so/iagomonteiro/VISION-BOARD-8efe2147adb44384b2e61584d9ef71a9?pvs=4", '_parent').focus();
+			else if (id == "INTENTION")
+				window.open("https://www.notion.so/iagomonteiro/INTENTION-BOARD-099bb04bf5694f7881a995b6d273ed2e?pvs=4", '_parent').focus();
+			else if (id == "GAME-CHANGER")
+				window.open("https://www.notion.so/iagomonteiro/GAME-CHANGER-1d7dbf415e7f48f180a257ea9a437742?pvs=4", '_parent').focus();
+			else if (id == "JOURNAL")
+				window.open("https://www.notion.so/iagomonteiro/JOURNALING-8d1046b3a44d4cb2b4a8c5e280741ac0?pvs=4", '_parent').focus();
+			else if (id == "MINDSCAPE")
+				window.open("https://www.notion.so/iagomonteiro/MINDSCAPE-c413c11bd77a4849a83a41c681ea661f?pvs=4", '_parent').focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html>
